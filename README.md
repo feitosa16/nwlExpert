@@ -1,7 +1,8 @@
 # NWL Expert
 _Projeto de trinha de conhecimento pásico em HTML, CSS e JS formalizado pela trilha de conhecimento liberado pela Rocketeat em Fevereiro de 2024_
 
-<img src = https://img.shields.io/badge/Status-Em-Progresso-yellow> 
+<img src = https://img.shields.io/badge/Status-Em_Progresso-yellow>
+
 
 ### Nesse momento, para visualizar esse projeto em sua máquina:
 1. Obtenha um leitor de código compativel com a linguagem HTML, CSS e JS [Ex.: Visual Studio Code](https://code.visualstudio.com)
