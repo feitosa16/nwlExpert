@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+*, :root{
+ margin: 0; 
+ padding: 0; 
+ box-sizing: border-box; 
+ font-family: 'Roboto'; 
+ font-synthesis: none; 
+ text-rendering: optimizeLegibility; 
+ -webkit-font-smoothing: grayscale; 
+ -webkit-text-size-adjust: 100%; 
+}
+
+
+body{
+  background-color: #100118;
+}
+
+main{
+  max-width: 640px;
+  margin: 0 auto 50px;
+  padding: 20px; 
+  
+}
+ header{
+   margin-top: 40px; 
+   padding-bottom: 10px;
+   border-bottom: 1px solid #4f325e;  
+ }
+ header h1{
+   margin-top:0; 
+   font-size: 30px; 
+   color: #f1f5f9;
+ }
+
+
+#quiz{
+  counter-reset: quiz-item; 
+}
+
+ .quiz-item{
+   margin-top: 24px; 
+   border: 1px solid #4f325e;
+   border-radius: 8px;
+
+   overflow: hidden; 
+ }
+
+ .quiz-item h3{ 
+   padding: 16px 20px; 
+   color: #e2e8f0; 
+
+   display: flex; 
+   align-items: center; 
+   gap: 12px; 
+   background-color: #4f325e;
+   
+   }
+.quiz-item h3:before{
+  counter-increment: quiz-item;
+  content: counter(quiz-item);
+
+  background-color:#100118; 
+  width: 28px; 
+  height: 28px; 
+  font-size: 12px; 
+  border-radius: 50%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  flex-shrink: 0; 
+}
+
+
+.quiz-item dl{
+   padding: 10px 14px; 
+ 
+   display: grid; /*utilizado para destravar o gap*/ 
+   gap: 6px; /*espaço entre os filhos*/
+ }
+
+.quiz-item dl dt{
+  font-size: 16px;
+  font-weight: normal; 
+  line-height: 24px;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center; 
+  gap: 8px; 
+  color: #e2e8f0; 
+}
+
+input{
+  all: unset;   
+  border: 1px solid #4f325e;
+  width: 16px;
+  height:16px; 
+  border-radius: 50%; 
+
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  flex-shrink: 0; 
+}
+input:checked{
+  border: 1px solid #F28A47;
+}
+/*pseudo selector :xxx:xxx */
+input:checked:before{
+  content: ""; 
+  width: 10px; 
+  height: 10px; 
+
+  display: block;
+  background-color: #F28A47; 
+  border-radius: 50%; 
+}
+
+#acertos { /*declaração de propriedades*/
+  text-align: center;
+  background-color: #F28A47;
+  position: fixed;
+  bottom:0;
+  left: 0; 
+  width: 100%;
+  padding: 10px;
+  
+}
+#quiz-item{
+font-weight: normal; 
+}
